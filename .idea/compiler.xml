@@ -9,6 +9,7 @@
         <module name="Analisis_Organizacion_Informacion" />
         <module name="Gestion_Datos_Dinamicos" />
         <module name="Mapas_Asociacion_Datos" />
+        <module name="Indexacion_Visualizacion_Archivos" />
       </profile>
     </annotationProcessing>
   </component>
