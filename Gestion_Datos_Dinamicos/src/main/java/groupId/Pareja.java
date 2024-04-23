@@ -1,27 +1,11 @@
 package groupId;
 
 public class Pareja<T, U> {
-    private T primero;
-    private U segundo;
+    private final T primero;
+    private final U segundo;
 
     public Pareja(T primero, U segundo) {
         this.primero = primero;
-        this.segundo = segundo;
-    }
-
-    public T getPrimero() {
-        return primero;
-    }
-
-    public void setPrimero(T primero) {
-        this.primero = primero;
-    }
-
-    public U getSegundo() {
-        return segundo;
-    }
-
-    public void setSegundo(U segundo) {
         this.segundo = segundo;
     }
 
