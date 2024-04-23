@@ -4,9 +4,9 @@ import javax.swing.*;
 import java.awt.*;
 
 public class VentanaPrincipal extends JFrame {
-    private JList<String> jListParejas;
-    private DefaultListModel<String> listModel;
-    private ListaDeParejas<Integer, String> listaDeParejas;
+    private final JList<String> jListParejas;
+    private final DefaultListModel<String> listModel;
+    private final ListaDeParejas<Integer, String> listaDeParejas;
 
     public VentanaPrincipal() {
         setTitle("Gestión de Datos Dinámicos");
@@ -40,7 +40,7 @@ public class VentanaPrincipal extends JFrame {
         if (valor != null && !valor.isEmpty()) {
             Pareja<Integer, String> pareja = new Pareja<>(listaDeParejas.getLista().size() + 1, valor);
             listaDeParejas.agregarPareja(pareja);
-            listModel.addElement(pareja.toString());  // Aquí se añade la pareja completa al listModel
+            listModel.addElement(pareja.toString());
         }
     }
 
