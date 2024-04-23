@@ -1,24 +1,33 @@
 package groupId;
 
-// Clase que representa un par de enteros.
-public class Pareja {
-    // Atributos que representan los dos elementos de la pareja.
-    private int primerElemento;
-    private int segundoElemento;
+public class Pareja<T, U> {
+    private T primero;
+    private U segundo;
 
-    // Constructor que inicializa los dos elementos de la pareja.
-    public Pareja(int primerElemento, int segundoElemento) {
-        this.primerElemento = primerElemento;
-        this.segundoElemento = segundoElemento;
+    public Pareja(T primero, U segundo) {
+        this.primero = primero;
+        this.segundo = segundo;
     }
 
-    // Getters para el primer elemento de la pareja.
-    public int getPrimerElemento() {
-        return primerElemento;
+    public T getPrimero() {
+        return primero;
     }
 
-    // Getters para el segundo elemento de la pareja.
-    public int getSegundoElemento() {
-        return segundoElemento;
+    public void setPrimero(T primero) {
+        this.primero = primero;
     }
+
+    public U getSegundo() {
+        return segundo;
+    }
+
+    public void setSegundo(U segundo) {
+        this.segundo = segundo;
+    }
+
+    @Override
+    public String toString() {
+        return "(" + primero + ", " + segundo + ")";
+    }
+
 }
