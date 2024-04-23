@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ListaDeParejas<T, U> {
-    private List<Pareja<T, U>> lista;
+    private final List<Pareja<T, U>> lista;
 
     public ListaDeParejas() {
         this.lista = new ArrayList<>();
