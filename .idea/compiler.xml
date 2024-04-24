@@ -13,4 +13,13 @@
       </profile>
     </annotationProcessing>
   </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Analisis_Organizacion_Informacion" options="" />
+      <module name="CFI-Tema-6" options="" />
+      <module name="Gestion_Datos_Dinamicos" options="" />
+      <module name="Indexacion_Visualizacion_Archivos" options="" />
+      <module name="Mapas_Asociacion_Datos" options="" />
+    </option>
+  </component>
 </project>
