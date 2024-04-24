@@ -10,9 +10,10 @@ public class VentanaPrincipal extends JFrame {
 
     public VentanaPrincipal() {
         setTitle("Gestión de Datos Dinámicos");
-        setSize(400, 300);
+        setSize(450, 300);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
+
 
         listaDeParejas = new ListaDeParejas<>();
         listModel = new DefaultListModel<>();
@@ -30,9 +31,15 @@ public class VentanaPrincipal extends JFrame {
         panelBotones.add(btnAgregar);
         panelBotones.add(btnEliminar);
 
+        JPanel panelInstrucciones = new JPanel();
+        JLabel instrucciones = new JLabel("<html><body>1. Para agregar una pareja, haga clic en 'Agregar'.<br>2. Para eliminar una pareja, seleccione la pareja y haga clic en 'Eliminar'.</body></html>");
+        panelInstrucciones.add(instrucciones);
+
         getContentPane().setLayout(new BorderLayout());
+        getContentPane().add(panelInstrucciones, BorderLayout.NORTH);
         getContentPane().add(scrollPane, BorderLayout.CENTER);
         getContentPane().add(panelBotones, BorderLayout.SOUTH);
+
     }
 
     private void agregarPareja() {
