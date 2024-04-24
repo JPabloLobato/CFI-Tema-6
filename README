@@ -1,4 +1,13 @@
 ## Enlace repositorio.
 URL Github: https://github.com/JPabloLobato/CFI-Tema-6.git
 
+## Explicación proyecto.
 Hola, Rubén
+El proyecto se basa en 4 modulos, el nombre de cada modulo corresponde al de cada apartado del caso final integrador.
+
+Al ejecutar el main.java(root), se abrirá un menú con las opciones de los modulos, cada modulo tiene una funcionalidad diferentes.
+En cada algoritmo al ejecutarlo se encuentra una breve explicación de su funcionamiento.
+Los test estan en la carpeta test de cada modulo.
+
+
+
