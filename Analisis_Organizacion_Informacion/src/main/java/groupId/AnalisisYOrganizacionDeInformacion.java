@@ -19,6 +19,12 @@ public class AnalisisYOrganizacionDeInformacion extends JFrame {
         super("Analisis y organizacion de informacion");
         setLayout(new FlowLayout());
 
+        JPanel panelInstrucciones = new JPanel();
+        JLabel instrucciones = new JLabel("<html><body>1. Para ordenar nombres, introduzca los nombres en el área de texto superior y haga clic en 'Ordenar nombres'.<br>2. Para ordenar transacciones, introduzca las transacciones en el área de texto inferior y haga clic en 'Ordenar transacciones'.</body></html>");
+        panelInstrucciones.add(instrucciones);
+
+        getContentPane().add(panelInstrucciones, BorderLayout.NORTH);
+
         nombresInputArea = new JTextArea(10, 20);
         add(new JScrollPane(nombresInputArea));
 
@@ -66,7 +72,7 @@ public class AnalisisYOrganizacionDeInformacion extends JFrame {
     public static void main(String[] args) {
         AnalisisYOrganizacionDeInformacion window = new AnalisisYOrganizacionDeInformacion();
         window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        window.setSize(600,400);
+        window.setSize(760,400);
         window.setLocationRelativeTo(null);
         window.setVisible(true);
 
