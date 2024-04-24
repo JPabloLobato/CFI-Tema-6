@@ -6,20 +6,16 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Analisis_Organizacion_Informacion" />
-        <module name="Gestion_Datos_Dinamicos" />
-        <module name="Mapas_Asociacion_Datos" />
-        <module name="Indexacion_Visualizacion_Archivos" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="Analisis_Organizacion_Informacion" options="" />
-      <module name="CFI-Tema-6" options="" />
-      <module name="Gestion_Datos_Dinamicos" options="" />
-      <module name="Indexacion_Visualizacion_Archivos" options="" />
-      <module name="Mapas_Asociacion_Datos" options="" />
+      <module name="Analisis_Organizacion_Informacion" options="-proc:none" />
+      <module name="CFI-Tema-6" options="-proc:none" />
+      <module name="Gestion_Datos_Dinamicos" options="-proc:none" />
+      <module name="Indexacion_Visualizacion_Archivos" options="-proc:none" />
+      <module name="Mapas_Asociacion_Datos" options="-proc:none" />
     </option>
   </component>
 </project>
