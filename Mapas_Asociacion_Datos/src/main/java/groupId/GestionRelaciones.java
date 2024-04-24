@@ -42,7 +42,12 @@ public class GestionRelaciones extends JFrame {
         });
         add(recuperarButton);
 
-        setSize(300, 200);
+        JPanel panelInstrucciones = new JPanel();
+        JLabel instrucciones = new JLabel("<html><body>1. Para agregar una relación, introduzca el número y el texto en los campos correspondientes y haga clic en 'Agregar'.<br>2. Para recuperar una relación, introduzca el número en el campo correspondiente y haga clic en 'Recuperar'.</body></html>");
+        panelInstrucciones.add(instrucciones);
+        getContentPane().add(panelInstrucciones, BorderLayout.NORTH);
+
+        setSize(700, 200);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
         setVisible(true);
